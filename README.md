@@ -12,9 +12,7 @@ This project aims to analyze a substantial collection of financial news data to 
 
 ```plaintext
 ├── .vscode/
-│   └── settings.json  
-├── app/
-│   └── app.py     # Streamlit application at the end of the project       
+│   └── settings.json      
 ├── .github/
 │   └── workflows/
 │       └── unittests.yml      # GitHub Actions configuration
@@ -25,11 +23,12 @@ This project aims to analyze a substantial collection of financial news data to 
 │   ├── __init__.py
 │   
 ├── notebooks/
-│   ├── __init__.py 
+    ├── __init__.py
+    ├── EDA_analysis.ipynb  
 ├── tests/
 └── scripts/
     ├── __init__.py
-    ├── eda_analysis.py         # Script for EDA on financial news 
+    ├── EDA_analysis.py         # Script for EDA on financial news 
     └── README.md                # Documentation for the scripts directory
 ```
 
@@ -54,3 +53,10 @@ This project aims to analyze a substantial collection of financial news data to 
    pip install -r requirements.txt
    ```
 
+4. **Load dataset**
+5. **Analyze headline lengths and publication patterns**
+6. **Plot trends by day, week, and month**
+7. **Perform sentiment analysis using NLTK's `SentimentIntensityAnalyzer`**
+8. **Identify major publication spikes**
+9. **Perform topic modeling using LDA (Latent Dirichlet Allocation)**
+10. **Analyze top publishers and their headline content**

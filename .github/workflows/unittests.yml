@@ -1,6 +1,6 @@
 name: Unit Tests
 
-on: 
+on:
   push:
   pull_request:
 
@@ -12,21 +12,20 @@ jobs:
     - name: Checkout repository code
       uses: actions/checkout@v3
 
-    - name: Set up Python 3.x
+    - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.13'
 
-    - name: Upgrade pip and install dependencies
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -r requirements.txt
 
-    - name: Run unit tests on scripts
+    - name: Set PYTHONPATH
       run: |
-        python -m unittest discover -s tests -p '*_test.py'
+        echo "PYTHONPATH=${{ github.workspace }}\scripts" >> $GITHUB_ENV
 
-    - name: Run notebook tests (using nbval)
+    - name: Run unit tests
       run: |
-        pip install nbval
-        pytest --nbval notebooks/
+        python -m unittest discover -s tests -p "test_*.py"

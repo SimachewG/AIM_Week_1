@@ -1,0 +1,13 @@
+2025-05-30 11:50:42,677 - root - INFO - Loading data from file: ../data/raw_analyst_ratings.csv
+2025-05-30 11:50:47,574 - root - INFO - Data loaded successfully with 1407328 rows and 6 columns
+2025-05-30 11:51:53,825 - root - INFO - Analyzing headline length statistics.
+2025-05-30 11:51:54,341 - root - INFO - Headline length analysis complete.
+2025-05-30 11:52:31,406 - root - INFO - Counting articles per publisher.
+2025-05-30 11:52:31,536 - root - INFO - Article count per publisher complete.
+2025-05-30 11:52:54,189 - root - INFO - Counting articles per publisher.
+2025-05-30 11:52:54,269 - root - INFO - Article count per publisher complete.
+2025-05-30 11:53:19,776 - root - INFO - Analyzing publication dates.
+2025-05-30 11:53:20,856 - root - INFO - Publication dates analysis complete.
+2025-05-30 11:53:56,018 - root - INFO - Performing sentiment analysis on column: headline
+2025-05-30 11:59:28,946 - root - INFO - Sentiment analysis complete.
+2025-05-30 11:59:30,680 - root - INFO - Performing topic modeling on column: headline

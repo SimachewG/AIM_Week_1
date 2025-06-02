@@ -53,10 +53,26 @@ This project aims to analyze a substantial collection of financial news data to 
    pip install -r requirements.txt
    ```
 
-4. **Load dataset**
+ ***EDA_analysis***
+
 5. **Analyze headline lengths and publication patterns**
 6. **Plot trends by day, week, and month**
 7. **Perform sentiment analysis using NLTK's `SentimentIntensityAnalyzer`**
 8. **Identify major publication spikes**
 9. **Perform topic modeling using LDA (Latent Dirichlet Allocation)**
 10. **Analyze top publishers and their headline content**
+
+***Sentiment_analysis***
+
+11. **Download necessary NLTK data files**
+12. **Apply Sentiment Analysis**
+13. **Sentiment Class Distribution**
+
+ ***Correlation***
+
+14. **Sentiment vs Daily Return Correlation for Different Stocks**
+15. **Daily Sentiment for stcocks**
+16. **Daily Returns for stocks**
+17. **Correlation Heatmap**
+18. **Sentiment vs. Daily Return for stocks**
+

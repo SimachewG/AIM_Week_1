@@ -3,10 +3,7 @@ data/
 
 # Ignore virtual environment
 .venv/
-<<<<<<< HEAD
 # Ignore virtual environment
-=======
->>>>>>> origin/main
 .venv310/
 
 # Ignore Python cache files
@@ -15,7 +12,6 @@ __pycache__/
 
 # Ignore log files
 *.log
-
 
 
 
